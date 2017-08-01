@@ -2,7 +2,7 @@
 
 
 ### Slides 
-You can download the pdf copy of the slides. The talk was blend of demos and slides, so I mostly used the slides to level set the audience on basic cryptography topics relevant to Blockchain. Everything else was mostly demo based.
+You can download pdf copy of the slides.The talk was blend of demos and slides, so I mostly used the slides to level set the audience on basic cryptography topics relevant to Blockchain. Everything else was mostly demo based.
 
 ### Demos
 
