@@ -1,4 +1,4 @@
-Presentation slides, demos and useful resources from NYC meetup on Blockchain for Developers:  https://www.meetup.com/msftcloud/events/241534380 
+#### Presentation slides, demos and useful resources from NYC meetup on Blockchain for Developers:  https://www.meetup.com/msftcloud/events/241534380 
 
 
 ### Slides 
