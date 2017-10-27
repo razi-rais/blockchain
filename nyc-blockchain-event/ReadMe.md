@@ -5,6 +5,12 @@
 ### Slides 
 You can download pdf copy of the slides.The talk was blend of demos and slides, so I mostly used the slides to level set the audience on basic cryptography topics relevant to Blockchain. Everything else was mostly demo based.
 
+* **Slideshare**: [Blockchain 101 - Introduction for Developers](https://www.slideshare.net/RaziRais/blockchain-101-introduction-for-developers-78462803 "Slideshare") 
+* **Download**: [pdf](https://github.com/razi-rais/blockchain/blob/master/nyc-blockchain-event/blockchain-101-slides.pdf)
+
+[<img src="https://github.com/razi-rais/blockchain/blob/master/nyc-blockchain-event/preview.png">](https://www.slideshare.net/RaziRais/blockchain-101-introduction-for-developers-78462803)
+
+
 ### Demos
 
 I predominantly used REMIX (online Solidity IDE https://remix.ethereum.org) and Truffle (http://truffleframework.com) for smart contract development and deployment. You can download smart contracts .sol files that can be use directly in REMIX and also the complete truffle solution as a zip file. Also, I used both test-rpc and private Ethereum blockchain running on Azure. 
