@@ -21,8 +21,9 @@ Azure ARM template that creates Azure Windows VM with following software install
 Azure ARM template that creates Azure Windows VM with following software installed:
 
 * Ubuntu 16.04 LTS
-* Nodejs 
-* Go
+* Nodejs (v 6.0)
+* NPM (v 3.10.10)
+* Go (1.9.1)
 
 <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Frazi-rais%2Fblockchain%2Fmaster%2Ftemplates%2Faz-blockchain-ubuntu1604LTS-vm.json" target="_blank">
     <img src="http://azuredeploy.net/deploybutton.png"/>
