@@ -4,7 +4,7 @@ Azure ARM template that creates Azure Windows VM with following software install
 
 * Windows Server 2016
 * Geth
-* Nodejs (Truffle and Remix will be installed separately later)
+* Nodejs (Truffle and Remix will are installed separately later)
 * Google Chrome (Metamask will be installed later)
 * Docker for Windows 
 * Visual Studio Code
