@@ -4,9 +4,9 @@ Azure ARM template that creates Azure Windows VM with following software install
 
 * Windows Server 2016
 * Geth (Latest version)
-* Nodejs (Latest version) | (For Truffle and Remix that need be installed using npm later)
-* Google Chrome ( For Metamask that needs to be installed later)
-* Docker for Windows (Latest version - Edge Relase)
+* Nodejs (Latest version) | (For Truffle and Remix that are installed using npm later)
+* Google Chrome (For Metamask that is installed later)
+* Docker for Windows (Latest version - Edge Release)
 * Visual Studio Code (Solidity extension installed later)
 
 <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Frazi-rais%2Fblockchain%2Fmaster%2Ftemplates%2Faz-blockchain-win-vm.json" target="_blank">
@@ -22,7 +22,7 @@ Azure ARM template that creates Azure Windows VM with following software install
 
 * Ubuntu 16.04 LTS
 * Geth (Latest stable version)
-* Nodejs (v 6.0) | (For Truffle and Remix that need be installed using npm later)
+* Nodejs (v 6.0) | (For Truffle and Remix that are installed using npm later)
 * NPM (v 3.10.10)
 * Go (1.9.1)
 
