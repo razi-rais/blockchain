@@ -9,4 +9,8 @@ Please make sure following software are installed:
 
 ``` PowerShell
 C:\Program Files\Python36\python.exe -m pip install sseclient 
+```
 
+*
+![Alt text](/projects/wikichain/Images/python-install1.JPEG?raw=true "Python Install")
+![Alt text](/projects/wikichain/Images/python-install2.JPEG?raw=true "Python Install")
