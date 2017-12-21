@@ -11,8 +11,9 @@ Please make sure following software are installed:
 C:\Program Files\Python36\python.exe -m pip install sseclient 
 ```
 
-* In the Solution Explorer, install Python.
-![Alt text](/projects/wikichain/Images/python-install1.jpg?raw=true "Python Install")
 
-* Type in "sseclient"
-![Alt text](/projects/wikichain/Images/python-install2.jpg?raw=true "Python Install")
+In the Solution Explorer, install Python.
+  ![Alt text](/projects/wikichain/Images/python-install1.jpg?raw=true "Python Install")
+
+Type in "sseclient"
+  ![Alt text](/projects/wikichain/Images/python-install2.jpg?raw=true "Python Install")
