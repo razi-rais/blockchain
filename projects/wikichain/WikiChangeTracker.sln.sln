@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27004.2006
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "WikiChangeTracker", "WikiChangeTracker.pyproj", "{FED56E05-FE99-4A7B-8846-95B6627291DA}"
 EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "WikiItemsApi", "..\WikiItemsApi\WikiItemsApi.pyproj", "{75C208D6-18EF-4E86-A919-FAFF0AD99DB6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,8 @@ Global
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{FED56E05-FE99-4A7B-8846-95B6627291DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{FED56E05-FE99-4A7B-8846-95B6627291DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75C208D6-18EF-4E86-A919-FAFF0AD99DB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75C208D6-18EF-4E86-A919-FAFF0AD99DB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
