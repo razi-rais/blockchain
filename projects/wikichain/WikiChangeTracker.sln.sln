@@ -27,6 +27,8 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WikiChangeWeb", "..\WikiCha
 		DefaultWebSiteLanguage = "Visual C#"
 	EndProjectSection
 EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "WikiItemsApi", "..\WikiItemsApi\WikiItemsApi.pyproj", "{75C208D6-18EF-4E86-A919-FAFF0AD99DB6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,8 @@ Global
 		{281D5E97-784D-4CA2-A22A-EBEDA3A68CE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{281D5E97-784D-4CA2-A22A-EBEDA3A68CE3}.Release|Any CPU.ActiveCfg = Debug|Any CPU
 		{281D5E97-784D-4CA2-A22A-EBEDA3A68CE3}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{75C208D6-18EF-4E86-A919-FAFF0AD99DB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75C208D6-18EF-4E86-A919-FAFF0AD99DB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
