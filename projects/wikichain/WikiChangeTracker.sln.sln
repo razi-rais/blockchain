@@ -1,9 +1,31 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27004.2006
+VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "WikiChangeTracker", "WikiChangeTracker.pyproj", "{FED56E05-FE99-4A7B-8846-95B6627291DA}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WikiChangeWeb", "..\WikiChangeWeb\", "{281D5E97-784D-4CA2-A22A-EBEDA3A68CE3}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.6.1"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_51032"
+		Debug.AspNetCompiler.PhysicalPath = "..\WikiChangeWeb\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_51032\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_51032"
+		Release.AspNetCompiler.PhysicalPath = "..\WikiChangeWeb\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_51032\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "51032"
+		SlnRelativePath = "..\WikiChangeWeb\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
 EndProject
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "WikiItemsApi", "..\WikiItemsApi\WikiItemsApi.pyproj", "{75C208D6-18EF-4E86-A919-FAFF0AD99DB6}"
 EndProject
@@ -15,6 +37,10 @@ Global
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{FED56E05-FE99-4A7B-8846-95B6627291DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{FED56E05-FE99-4A7B-8846-95B6627291DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{281D5E97-784D-4CA2-A22A-EBEDA3A68CE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{281D5E97-784D-4CA2-A22A-EBEDA3A68CE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{281D5E97-784D-4CA2-A22A-EBEDA3A68CE3}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{281D5E97-784D-4CA2-A22A-EBEDA3A68CE3}.Release|Any CPU.Build.0 = Debug|Any CPU
 		{75C208D6-18EF-4E86-A919-FAFF0AD99DB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{75C208D6-18EF-4E86-A919-FAFF0AD99DB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
