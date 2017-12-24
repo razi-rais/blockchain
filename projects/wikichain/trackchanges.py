@@ -11,7 +11,7 @@ def get_wiki_changes(wiki_recent_changes_url = "https://stream.wikimedia.org/v2/
             print(str)
             json_obj = json.loads(str)
             if len(json_obj) > 0:
-                if( json_obj['bot'] == False):
+                 if( json_obj['bot'] == False):
                     # Check for wiki id or uri
 					# type is edit | log | categorize 
                     print(json_obj)
