@@ -13,6 +13,9 @@ def create_message(msg,code):
     resp = jsonify(message)
     resp.status_code = code
 
+    #For dev only, remove this for production.  In prod, 
+    resp.headers['Access-Control-Allow-Origin'] = '*'
+
     return resp
         
 @app.route("/SaveArticle", methods=['POST'])
@@ -55,7 +58,7 @@ def get_articles_by_userid():
     row = cursor.fetchone()
     
     data = {}
-    items = [] 
+    items = []
 
     while row:
         items.append([str(row[0]),str(row[1]),str(row[2])])
@@ -65,11 +68,10 @@ def get_articles_by_userid():
     return create_message(json_data,200)
 
 def get_sqlcon():
-
-    server = '<<dbname>>.database.windows.net'
-    database = 'dbname'
+    server = 'rz-sql.database.windows.net'
+    database = 'rzsqldb'
     username = 'super'
-    password = ''
+    password = 'Password~2017'
     driver= '{ODBC Driver 13 for SQL Server}'
     conn = pyodbc.connect('DRIVER='+driver+';PORT=1433;SERVER='+server+';PORT=1443;DATABASE='+database+';UID='+username+';PWD='+ password)
     
