@@ -2,8 +2,10 @@ import json
 import pyodbc
 from flask import request, url_for, jsonify
 from flask_api import FlaskAPI, status, exceptions
- 
+from flask_cors import CORS
+
 app = FlaskAPI(__name__)
+CORS(app) 
 
 def create_message(msg,code):
     message = {
