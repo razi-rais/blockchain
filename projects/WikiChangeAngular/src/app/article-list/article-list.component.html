@@ -1,0 +1,33 @@
+<table class="table table-striped projects">
+  <thead>
+    <tr>
+      <th style="width: 1%">ID</th>
+      <th style="width: 20%">Article Name</th>
+      <th>Article URL</th>
+      <th>Status</th>
+      <th style="width: 20%">#Edit</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let article of articles">
+      <td>{{article.id}}</td>
+      <td>
+        <a>{{article.name}}</a>
+      </td>
+      <td>
+        {{article.url}}
+      </td>
+      <td>
+        <button type="button" class="btn btn-success btn-xs">Success</button>
+      </td>
+      <td>
+        <a href="#" class="btn btn-primary btn-xs">
+          <i class="fa fa-folder"></i> View </a>
+        <a href="#" class="btn btn-info btn-xs">
+          <i class="fa fa-pencil"></i> Edit </a>
+        <a href="#" class="btn btn-danger btn-xs">
+          <i class="fa fa-trash-o"></i> Delete </a>
+      </td>
+    </tr>
+  </tbody>
+</table>
