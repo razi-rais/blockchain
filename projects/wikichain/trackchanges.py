@@ -18,6 +18,7 @@ def get_wiki_changes(wiki_recent_changes_url = "https://stream.wikimedia.org/v2/
                     # type is edit | log | categorize 
                     print(json_obj)
                     items['id']=  article_id
+                    items['request_id']=  json_obj['meta']['request_id']
                     items['title']=  json_obj['title']
                     items['comment']=  json_obj['comment']
                     items['revision_old']=  json_obj['revision']['old']
