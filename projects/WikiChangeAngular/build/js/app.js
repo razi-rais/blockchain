@@ -3,7 +3,7 @@
     var id = $('#article-id').val();
 
     $.ajax({
-        url: apiUrl + '/api/Articles?userID=' + id,
+        url: apiUrl + '/GetArticlesByUserID?userID=' + id,
         dataType: 'json',
         type: 'GET'
     }).done(function (data) {
@@ -25,7 +25,7 @@ $('#save-button').click(function () {
         id = Object.keys(json.query.pages)[0];
 
         $.ajax({
-            url: apiUrl + '/api/Articles',
+            url: apiUrl + '/SaveArticle',
             data: JSON.stringify({
                 "UserID": userId,
                 "Articles":

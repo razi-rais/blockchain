@@ -20,7 +20,7 @@ def create_message(msg,code):
 
     return resp
         
-@app.route("/SaveArticle", methods=['POST'])
+@app.route("/api/Articles", methods=['POST'])
 def save_article():
     
    if request.method == 'POST':
@@ -48,7 +48,7 @@ def save_article():
 
    return create_message("Item added/updated successfully",200);
 
-@app.route("/GetArticlesByUserID", methods=['GET'])
+@app.route("/api/Articles", methods=['GET'])
 def get_articles_by_userid():
 
   if request.method == 'GET':
