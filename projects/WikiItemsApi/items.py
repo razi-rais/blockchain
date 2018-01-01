@@ -15,9 +15,6 @@ def create_message(msg,code):
     resp = jsonify(message)
     resp.status_code = code
 
-    #For dev only, remove this for production.  In prod, 
-    resp.headers['Access-Control-Allow-Origin'] = '*'
-
     return resp
         
 @app.route("/api/Articles", methods=['POST'])
@@ -68,6 +65,26 @@ def get_articles_by_userid():
         
     json_data = json.dumps(items)
     return create_message(json_data,200)
+
+@app.route("/api/GetArticleIdByUri", methods=['GET'])
+def get_articleID_by_uri():
+
+    article_id = ""
+    if request.method == 'GET':
+
+        uri = user_id = request.args.get('articleUri')
+        cnxn = get_sqlcon()
+        cursor = cnxn.cursor()
+        cursor.execute("SELECT  [ArticleID] FROM [Articles] WHERE  [Url] = '"+ uri+"'")
+        row = cursor.fetchone()
+         
+    
+        while row:
+          article_id = str(row[0])
+          row = cursor.fetchone()
+        
+    json_data = json.dumps("[{"+str(article_id )+ "}]")
+    return article_id
 
 def get_sqlcon():
     server = 'rz-sql.database.windows.net'
