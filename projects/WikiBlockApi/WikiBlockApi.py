@@ -1,4 +1,3 @@
-
 import json
 from flask import request, url_for, jsonify
 from flask_api import FlaskAPI, status, exceptions
@@ -9,8 +8,12 @@ from web3 import Web3, HTTPProvider
 app = FlaskAPI(__name__)
 CORS(app) 
 
+#TODO: Following values should be passed through enviroment variables 
 web3_url= "http://localhost:8545"
-contract_address = ""
+account = "0x71979142f6b672e0bfd23264413a4abc2cb501fa"
+contract_address = "0x061ff3c0b5c9cf222cb7aa2a41992ea1b14ac32c"
+abi = json.loads('[{"constant":false,"inputs":[{"name":"id","type":"uint256"},{"name":"title","type":"string"},{"name":"url","type":"string"},{"name":"revision_old","type":"uint256"},{"name":"revision_new","type":"uint256"},{"name":"timestamp","type":"uint256"},{"name":"change_type","type":"string"},{"name":"user","type":"string"},{"name":"comment","type":"string"}],"name":"UpdateArticleHistory","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"inputs":[],"payable":false,"stateMutability":"nonpayable","type":"constructor"},{"anonymous":false,"inputs":[{"indexed":false,"name":"","type":"address"},{"indexed":false,"name":"id","type":"uint256"},{"indexed":false,"name":"title","type":"string"},{"indexed":false,"name":"url","type":"string"},{"indexed":false,"name":"revision_old","type":"uint256"},{"indexed":false,"name":"revision_new","type":"uint256"},{"indexed":false,"name":"timestamp","type":"uint256"},{"indexed":false,"name":"change_type","type":"string"},{"indexed":false,"name":"user","type":"string"},{"indexed":false,"name":"comment","type":"string"}],"name":"articleUpdateEvent","type":"event"}]')
+gas = 100000
 
 def create_message(msg,code):
     message = {
@@ -19,39 +22,28 @@ def create_message(msg,code):
     }
     resp = jsonify(message)
     resp.status_code = code
-
-    #For dev only, remove this for production.  In prod, 
-    resp.headers['Access-Control-Allow-Origin'] = '*'
-
     return resp
         
 @app.route("/", methods=['POST'])
-def save_article():
+def update_article():
     
    if request.method == 'POST':
-     
-   # web3.py instance
+
+    data = json.loads(request.json)
     web3 = Web3(HTTPProvider(web3_url))
-    #account = "0xF099F16A5217cF328e4180b893eA2D612dd99a0F";
-    #balance = web3.eth.getBalance(account)
-    account = web3.personal.newAccount('the-passphrase')
-    account2 = "0x89e8ca895b804b2ba2fa4bd57fd9928660ad3dea"
-    web3.personal.unlockAccount(account,'the-passphrase')
-    tx = web3.eth.sendTransaction({'to': account, 'from': account2 , 'value': 1})
-
-    data = request.json
+    #web3.personal.unlockAccount(account,'the-passphrase')
+    wiki_contract = web3.eth.contract(contract_address,abi=abi)
+    tx_receipt = wiki_contract.transact({'from': account, 'gas': gas}).UpdateArticleHistory(int(data['id']),
+                                                                                            data['title'],
+                                                                                            data['uri'],
+                                                                                            data['revision_old'],
+                                                                                            data['revision_new'],
+                                                                                            data['timestamp'],
+                                                                                            data['change_type'],
+                                                                                            data['user'],
+                                                                                            data['comment'])
    
-     
-   return create_message("Item added/updated successfully",200);
-
-@app.route("/GetArticlesByUserID", methods=['GET'])
-def get_articles_by_userid():
-
-  if request.method == 'GET':
-       
-    user_id = request.args.get('userID')
-     
-    return create_message("",200)
+   return create_message(tx_receipt,200);
 
  
 if __name__ == "__main__":
