@@ -13,7 +13,8 @@ def get_wiki_changes(wiki_recent_changes_url = "https://stream.wikimedia.org/v2/
             #print(str)
             json_obj = json.loads(str)
             if len(json_obj) > 0:
-                 article_id = get_articleID_by_uri(json_obj['meta']['uri'])
+                 #article_id = get_articleID_by_uri(json_obj['meta']['uri'])
+                 article_id = "3";
                  if(check_conditions(article_id, json_obj['type'],json_obj['bot'])):
                     # type is edit | log | categorize 
                     print(json_obj)
