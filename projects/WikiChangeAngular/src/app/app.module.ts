@@ -15,6 +15,7 @@ import { ArticleListComponent } from './article-list/article-list.component';
 
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { WatchComponent } from './watch/watch.component';
+import { NavigationComponent } from './navigation/navigation.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { WatchComponent } from './watch/watch.component';
     AppComponent,
     ArticleListComponent,
     DashboardComponent,
-    WatchComponent
+    WatchComponent,
+    NavigationComponent
   ],
   imports: [
     BrowserModule,
