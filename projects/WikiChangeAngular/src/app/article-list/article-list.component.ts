@@ -9,7 +9,7 @@ import { ArticleService } from './article/article.service';
   styleUrls: ['./article-list.component.css']
 })
 export class ArticleListComponent implements OnInit {
-  user = 12;
+  user = 33;
   articles: Article[] = [];
 
   constructor(private articleService: ArticleService) { }

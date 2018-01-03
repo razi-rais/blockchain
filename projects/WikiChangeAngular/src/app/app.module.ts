@@ -12,10 +12,10 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { ArticleService } from './article-list/article/article.service';
 import { ArticleListComponent } from './article-list/article-list.component';
-
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { WatchComponent } from './watch/watch.component';
 import { NavigationComponent } from './navigation/navigation.component';
+import { WatchComponent } from './watch/watch.component';
+import { Web3Service } from './web3/web3.service';
 
 
 @NgModule({
@@ -23,8 +23,8 @@ import { NavigationComponent } from './navigation/navigation.component';
     AppComponent,
     ArticleListComponent,
     DashboardComponent,
-    WatchComponent,
-    NavigationComponent
+    NavigationComponent,
+    WatchComponent
   ],
   imports: [
     BrowserModule,
@@ -34,7 +34,7 @@ import { NavigationComponent } from './navigation/navigation.component';
 
     AppRoutingModule
   ],
-  providers: [ArticleService],
+  providers: [ArticleService, Web3Service],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
