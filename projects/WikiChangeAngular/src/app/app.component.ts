@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Web3Service } from './web3/web3.service';
 
 @Component({
   selector: 'app-root',
@@ -9,12 +8,10 @@ import { Web3Service } from './web3/web3.service';
 export class AppComponent implements OnInit {
   bodyClass = 'nav-md';
 
-  constructor(private web3Service: Web3Service) {
-
+  constructor() {
   }
 
   ngOnInit() {
-    this.web3Service.init();
   }
 
 }

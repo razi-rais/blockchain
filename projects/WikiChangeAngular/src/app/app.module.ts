@@ -15,7 +15,7 @@ import { ArticleListComponent } from './article-list/article-list.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { WatchComponent } from './watch/watch.component';
-import { Web3Service } from './web3/web3.service';
+import { ArticleWeb3Service } from './article-list/article/article-web3.service';
 
 
 @NgModule({
@@ -34,7 +34,7 @@ import { Web3Service } from './web3/web3.service';
 
     AppRoutingModule
   ],
-  providers: [ArticleService, Web3Service],
+  providers: [ArticleService, ArticleWeb3Service],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

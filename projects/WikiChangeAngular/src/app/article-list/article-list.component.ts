@@ -1,27 +1,32 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy  } from '@angular/core';
+import { ISubscription } from 'rxjs/Subscription';
 
 import { Article } from './article/article.model';
-import { ArticleService } from './article/article.service';
+import { ArticleWeb3Service } from './article/article-web3.service';
 
 @Component({
   selector: 'app-article-list',
   templateUrl: './article-list.component.html',
   styleUrls: ['./article-list.component.css']
 })
-export class ArticleListComponent implements OnInit {
-  user = 33;
+export class ArticleListComponent implements OnInit, OnDestroy {
+  private subscription: ISubscription;
   articles: Article[] = [];
 
-  constructor(private articleService: ArticleService) { }
+  constructor(private articleWeb3Service: ArticleWeb3Service) { }
 
   ngOnInit() {
     this.getArticles();
   }
 
+  ngOnDestroy() {
+    this.subscription.unsubscribe();
+  }
+
   getArticles() {
     this.articles = [];
 
-    this.articleService.get(this.user)
+    this.subscription = this.articleWeb3Service.startPolling()
       .subscribe(articles => { this.articles = articles; }, error => { });
   }
 
