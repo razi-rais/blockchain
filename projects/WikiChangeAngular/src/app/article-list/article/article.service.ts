@@ -4,6 +4,7 @@ import { Observable } from 'rxjs/Observable';
 
 import { CONFIG } from '../../core';
 import { Article } from './article.model';
+import { ArticlePost } from './article-post.model';
 
 @Injectable()
 export class ArticleService {
@@ -21,6 +22,10 @@ export class ArticleService {
         return data.map(el => new Article(el[0], el[1], el[2]));
       })
       .catch(error => this.handleError(error, 'Error getting articles!'));
+  }
+
+  post(articlePost: ArticlePost) {
+    console.log(articlePost);
   }
 
   private handleError<T>(error: HttpErrorResponse, msg: string) {

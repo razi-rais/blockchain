@@ -1,3 +1,53 @@
-<p>
-  watch works!
-</p>
+<div class="">
+  <div class="page-title">
+    <div class="title_left">
+      <h3>Watch a Wikipedia Page</h3>
+    </div>
+  </div>
+
+  <div class="clearfix"></div>
+  <div class="row">
+    <div class="col-md-12 col-sm-12 col-xs-12">
+      <div class="x_panel">
+        <div class="x_content">
+
+          <form (ngSubmit)="onSubmit()" #watchForm="ngForm" class="form-horizontal form-label-left" novalidate>
+            <p>
+              Enter a Wikipedia URL in order to add a watch to it.
+            </p>
+            <span class="section"></span>
+            <br />
+            <div class="item form-group">
+              <label class="control-label col-md-3 col-sm-3 col-xs-12" for="userId">
+                User ID
+                <span class="required">*</span>
+              </label>
+              <div class="col-md-6 col-sm-6 col-xs-12">
+                <input id="userId" [(ngModel)]="model.UserId" name="userId" class="form-control col-md-7 col-xs-12" placeholder="10" required
+                  type="number">
+              </div>
+            </div>
+            <div class="item form-group">
+              <label class="control-label col-md-3 col-sm-3 col-xs-12" for="url">
+                URL
+                <span class="required">*</span>
+              </label>
+              <div class="col-md-6 col-sm-6 col-xs-12">
+                <input id="url" [(ngModel)]="model.Articles[0].url" name="url" class="form-control col-md-7 col-xs-12" placeholder="https://en.wikipedia.org/wiki/Rock_(geology)" required
+                  type="text">
+              </div>
+            </div>
+
+            <div class="ln_solid"></div>
+            <div class="form-group">
+              <div class="col-md-6 col-md-offset-3">
+                <button type="button" class="btn btn-default" (click)="reset(); watchForm.reset();">Cancel</button>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

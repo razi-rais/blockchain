@@ -1,8 +1,8 @@
 export class Article {
     constructor(
-        public id: string,
-        public title: string,
-        public url: string
+        public id?: string,
+        public title?: string,
+        public url?: string
     ) { }
 
     change_type: string;
@@ -11,6 +11,4 @@ export class Article {
     revision_old: string;
     timestamp: string;
     user: string;
-
-    
 }
