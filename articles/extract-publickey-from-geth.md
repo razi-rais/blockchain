@@ -21,7 +21,7 @@ install -v ./cmd/geth
 
 ### Run
 
-You can run the command with --help switch to get the details. 
+You may want to run the command with --help switch to get the details. 
 
 ```
 ../../../../bin/geth account publickey --help
@@ -39,7 +39,7 @@ Currently all input parameters need to be provided interactively.
 ```
 
 To extract the public key, run the command and enter acccount address, its passphrase and the path to 
-the account's keyfile. 
+the keyfile. 
 
 You should see the public key as part of the output. 
 
