@@ -37,7 +37,7 @@ Note:
 Currently all input parameters need to be provided interactively.
 ```
 
-To extract the public key, run the command and enter acccount address, its passphrase and the path to 
+To extract the public key, run the command and enter acccount address, its passphrase and path to 
 the keyfile. 
 
 You should see the public key as part of the output. 
