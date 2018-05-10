@@ -4,8 +4,9 @@
 Usage: Command line swtich ```geth account publickey``` which will print out the account's public key.
 
 ## Setup
-To build the source code, you need to have go language installed. You can find geth setup instructions for developers at: https://github.com/ethereum/go-ethereum/wiki/Developers'-Guide
+To build from the source code, you need to have go language installed. You can find geth setup instructions for developers at: https://github.com/ethereum/go-ethereum/wiki/Developers'-Guide
  
+Note: On Windows, you may require gcc compiler.You can download tdm-gcc from: http://tdm-gcc.tdragon.net/download
 
 ### Clone the repo
 ``` 
