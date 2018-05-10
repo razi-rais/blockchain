@@ -6,6 +6,8 @@ Usage: Command line swtich ```geth account publickey``` which will print out the
 ## Setup
 To build from the source code, you need to have go language installed. You can find geth setup instructions for developers at: https://github.com/ethereum/go-ethereum/wiki/Developers'-Guide
  
+You can find the compelete source code enchancements to geth at: https://github.com/razi-rais/go-ethereum 
+
 Note: On Windows, you may require gcc compiler.You can download tdm-gcc from: http://tdm-gcc.tdragon.net/download
 
 ### Clone the repo
