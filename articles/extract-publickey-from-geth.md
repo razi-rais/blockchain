@@ -50,7 +50,7 @@ Address (without 0x): 1217fb994af050cba53b548a59962f230f4dd502
 
 Passphrase: 
 
-Keyfile: /Users/razi/Library/Ethereum/keystore/UTC--2018-05-10T00-00-12.051229171Z--1217fb994af050cba53b548a59962f230f4dd502
+Keyfile: /Users/username/Library/Ethereum/keystore/UTC--2018-05-10T00-00-12.051229171Z--1217fb994af050cba53b548a59962f230f4dd502
 
 Public Key: {0432b997682215ff7e475dee52e25f58f98dbd465b2a2a106692cf4099c43badbfd216eb4c0015a9e50c81b178deae83c7f11fb27297e06fac7dd61f7bf0f43b5f} 
 ```
