@@ -1,8 +1,7 @@
 
 # How to extract Ethereum account's public key using Geth
-Added capability to Geth command line:
 
-* New command line swtich ```geth account publickey``` which will print out the account's public key.
+New command line swtich ```geth account publickey``` which will print out the account's public key.
 
 ## Setup
 To build the source code, you need to have go language installed. You can find geth setup instructions for developers at: https://github.com/ethereum/go-ethereum/wiki/Developers'-Guide
