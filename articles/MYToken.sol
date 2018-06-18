@@ -232,3 +232,31 @@ contract MYToken is StandardToken {
         Transfer(address(0), msg.sender, _initial_supply);
     }
 }
+
+contract MYTFaucet {
+
+	StandardToken public MYToken;
+	address public MYTOwner;
+
+	// METFaucet constructor, provide the address of METoken contract and
+	// the owner address we will be approved to transferFrom
+	function MYTFaucet(address _MYToken, address _MYTOwner) public {
+
+		// Initialize the METoken from the address provided
+		MYToken = StandardToken(_MYToken);
+		MYTOwner = _MYTOwner;
+	}
+
+	function withdraw(uint withdraw_amount) public {
+
+    	// Limit withdrawal amount to 10 MET
+    	require(withdraw_amount <= 1000);
+
+		// Use the transferFrom function of METoken
+		MYToken.transferFrom(MYTOwner, msg.sender, withdraw_amount);
+    }
+
+	// REJECT any incoming ether
+	function () public payable { revert(); }
+
+}
