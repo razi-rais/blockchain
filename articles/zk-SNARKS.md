@@ -81,6 +81,6 @@ Copy the Remix input (above) and paste it in the Remix ```verifyTx``` input box.
 <img src="https://github.com/razi-rais/blockchain/blob/master/articles/images/verifyTx.png">
 
 You can see the transaction result by expanding the transaction pane and looking at the ```logs``` section. Notice the 
-message from the event "Transaction successfully verified", which indicates prover successfully manage to verify the claim (i-e age is over 21) 
+event args with the value "Transaction successfully verified", which indicates prover is successfully manage to verify the claim (i-e age is over 21). 
 
 <img src="https://github.com/razi-rais/blockchain/blob/master/articles/images/verifyTx-Logs.png"> 
