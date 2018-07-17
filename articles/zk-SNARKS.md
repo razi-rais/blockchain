@@ -1,11 +1,13 @@
-# Example: Date of Birth (Over 21 years)
+## Example: Date of Birth (Over 21 years)
 
-* Create ageOver21.code file by running following instruction:
+### Create ageOver21.code program
+
+* Create ageOver21.code file by running the following instruction:
 ``` 
 cat <<EOF >ageOver21.code 
 ```
 
-* Paste the code below, then type ```EOF``` and press ENTER.
+* Paste the code below and then type ```EOF```. Finally, press ENTER.
 -------------------------------------------------------------------
 
 ```
@@ -24,14 +26,22 @@ def main(pubName,private yearOfBirth, private centuryOfBirth):
 -------------------------------------------------------------------
  Note: Razi = 8297122105. Covert text to decimal using the website: https://cryptii.com/decimal-text
 
-* Run following commands (you can run them together if you like).
+* Compile the code file:
+
 ```
 ./target/release/zokrates compile -i ageOver21.code 
+```
+
+### Run commands to Setup, Export Verifier, Compute Wittness and Generate Proof
+
+* Note: You can run them together if you like.
+```
 ./target/release/zokrates setup
 ./target/release/zokrates export-verifier
 ./target/release/zokrates compute-witness -a 8297122105 97 19
 ./target/release/zokrates generate-proof
 ```
+
 * You should see the output lisiting the proof:
 ```
 A = Pairing.G1Point(0x24cdd31f8e07e854e859aa92c6e7f761bab31b4a871054a82dc01c143bc424d, 0x1eaed5314007d283486826e9e6b369b0f1218d7930cced0dd0e735d3702877ac);
