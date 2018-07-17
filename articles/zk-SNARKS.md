@@ -80,4 +80,6 @@ Copy the Remix input (above) and paste it in the Remix ```verifyTx``` input box.
 
 <img src="https://github.com/razi-rais/blockchain/blob/master/articles/images/verifyTx.png">
 
+You can see the transaction result by expanding the transaction pane and looking at the ```logs``` section.
 
+<img src="https://github.com/razi-rais/blockchain/blob/master/articles/images/verifyTx-Logs.png"> 
