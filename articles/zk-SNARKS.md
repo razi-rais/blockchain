@@ -24,20 +24,16 @@ def main(pubName,private yearOfBirth, private centuryOfBirth):
 -------------------------------------------------------------------
  Note: Razi = 8297122105. Covert text to decimal using the website: https://cryptii.com/decimal-text
 
-# Create ageOver21.code file
-cat <<EOF >ageOver21.code
-
-
-#Commands:
-
+* Run following commands (you can run them together if you like).
+```
 ./target/release/zokrates compile -i ageOver21.code 
 ./target/release/zokrates setup
 ./target/release/zokrates export-verifier
 ./target/release/zokrates compute-witness -a 8297122105 97 19
 ./target/release/zokrates generate-proof
-
-
-#Proof
+```
+* You should see the output lisiting the proof:
+```
 A = Pairing.G1Point(0x24cdd31f8e07e854e859aa92c6e7f761bab31b4a871054a82dc01c143bc424d, 0x1eaed5314007d283486826e9e6b369b0f1218d7930cced0dd0e735d3702877ac);
 A_p = Pairing.G1Point(0x1d5c046b83c204766f7d7343c76aa882309e6663b0563e43b622d0509ac8e96e, 0x180834d1ec2cd88613384076e953cfd88448920eb9a965ba9ca2a5ec90713dbc);
 B = Pairing.G2Point([0x1b51d6b5c411ec0306580277720a9c02aafc9197edbceea5de1079283f6b09dc, 0x294757db1d0614aae0e857df2af60a252aa7b2c6f50b1d0a651c28c4da4a618e], [0x218241f97a8ff1f6f90698ad0a4d11d68956a19410e7d64d4ff8362aa6506bd4, 0x2ddd84d44c16d893800ab5cc05a8d636b84cf9d59499023c6002316851ea5bae]);
@@ -46,8 +42,10 @@ C = Pairing.G1Point(0x2dc212a0e81658a83137a1c73ac56d94cb003d05fd63ae8fc4c63c4a36
 C_p = Pairing.G1Point(0x7eb9c5a93b528559c9b98b1a91724462d07ca5fadbef4a48a36b56affa6489e, 0x1c4e24d15c3e2152284a2042e06cbbff91d3abc71ad82a38b8f3324e7e31f00);
 H = Pairing.G1Point(0x1dbeb10800f01c2ad849b3eeb4ee3a69113bc8988130827f1f5c7cf5316960c5, 0xc935d173d13a253478b0a5d7b5e232abc787a4a66a72439cd80c2041c7d18e8);
 K = Pairing.G1Point(0x28a0c6fff79ce221fccd5b9a5be9af7d82398efa779692297de974513d2b6ed1, 0x15b807eedf551b366a5a63aad5ab6f2ec47b2e26c4210fe67687f26dbcc7434d);
+```
 
-#Remix
+* Remix input: Clean the proof by adding quotations marks and brackets. Also remove unnecessary text.  
+
 ["0x24cdd31f8e07e854e859aa92c6e7f761bab31b4a871054a82dc01c143bc424d", "0x1eaed5314007d283486826e9e6b369b0f1218d7930cced0dd0e735d3702877ac"],
 ["0x1d5c046b83c204766f7d7343c76aa882309e6663b0563e43b622d0509ac8e96e", "0x180834d1ec2cd88613384076e953cfd88448920eb9a965ba9ca2a5ec90713dbc"],
 [["0x1b51d6b5c411ec0306580277720a9c02aafc9197edbceea5de1079283f6b09dc", "0x294757db1d0614aae0e857df2af60a252aa7b2c6f50b1d0a651c28c4da4a618e"], ["0x218241f97a8ff1f6f90698ad0a4d11d68956a19410e7d64d4ff8362aa6506bd4", "0x2ddd84d44c16d893800ab5cc05a8d636b84cf9d59499023c6002316851ea5bae"]],
