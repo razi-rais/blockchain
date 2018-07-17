@@ -60,7 +60,8 @@ H = Pairing.G1Point(0x1dbeb10800f01c2ad849b3eeb4ee3a69113bc8988130827f1f5c7cf531
 K = Pairing.G1Point(0x28a0c6fff79ce221fccd5b9a5be9af7d82398efa779692297de974513d2b6ed1, 0x15b807eedf551b366a5a63aad5ab6f2ec47b2e26c4210fe67687f26dbcc7434d);
 ```
 
-* Remix input: Clean the proof by adding quotations marks, commans and brackets. Also removed the unnecessary text.  
+* Remix input: Clean the proof output by adding quotations marks, commans and brackets. Also remove unnecessary text. Final
+input value should looks like:
 
 ```
 ["0x24cdd31f8e07e854e859aa92c6e7f761bab31b4a871054a82dc01c143bc424d", "0x1eaed5314007d283486826e9e6b369b0f1218d7930cced0dd0e735d3702877ac"],
@@ -75,7 +76,7 @@ K = Pairing.G1Point(0x28a0c6fff79ce221fccd5b9a5be9af7d82398efa779692297de974513d
 ```
 ### Deploy verifier.sol smart contract
 
-Verifier.sol contract is created for earlier, when you run the ```generate-proof``` command. Copy its content from ```/home/zokrates/ZoKrates/verifier.sol``` file and deploy it using Remix or Truffle.
+Verifier.sol contract is created earlier when you run the ```generate-proof``` command. Copy its content from ```/home/zokrates/ZoKrates/verifier.sol``` file and deploy it using Remix or Truffle.
   
   Note: If you are having issue accessing the contract, I have made it available at:
   https://github.com/razi-rais/blockchain/blob/master/articles/verifier_gt_than_21.sol
