@@ -57,6 +57,8 @@ K = Pairing.G1Point(0x28a0c6fff79ce221fccd5b9a5be9af7d82398efa779692297de974513d
 [8297122105,1]
 ```
 
-* Copy the above input and paste it in Remix ```verifyTx``` input box.
+* Copy the above input and paste it in the Remix ```verifyTx``` input box. Finally press verifyTx.
+
+<img src="https://github.com/razi-rais/blockchain/blob/master/articles/images/verifyTx.png">
 
 
