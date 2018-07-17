@@ -56,7 +56,12 @@ K = Pairing.G1Point(0x28a0c6fff79ce221fccd5b9a5be9af7d82398efa779692297de974513d
 ["0x28a0c6fff79ce221fccd5b9a5be9af7d82398efa779692297de974513d2b6ed1", "0x15b807eedf551b366a5a63aad5ab6f2ec47b2e26c4210fe67687f26dbcc7434d"],
 [8297122105,1]
 ```
-
+* Deploy verifier.sol smart contract
+  Verifier.sol contract is created for you. Copy its context from ```/home/zokrates/ZoKrates/verifier.sol``` and deploy it using Remix or truffle.
+  
+  If you are having issue accessing the contract, I have made it available at:
+  https://github.com/razi-rais/blockchain/blob/master/articles/verifier_gt_than_21.sol
+  
 * Copy the above input and paste it in the Remix ```verifyTx``` input box. Finally press verifyTx.
 
 <img src="https://github.com/razi-rais/blockchain/blob/master/articles/images/verifyTx.png">
