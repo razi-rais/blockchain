@@ -1,5 +1,10 @@
 ## Example: Date of Birth (Over 21 years)
 
+### Run ZoKrates in a Docker container
+``` 
+docker run -it -w /home/zokrates/ZoKrates  rbinrais/zokrates:1.0 bash 
+```
+
 ### Create ageOver21.code program
 
 * Create ageOver21.code file by running the following instruction:
