@@ -15,9 +15,16 @@ Labs include:
 
 ## Blockchain Development 101
 
+Hands-on workshop covers: 
+
+* Cryptography 101 (Hashing,Signing, Encryption, PKI etc.)
+* Ethereum Externally Owned Accounts (Private/Public Keys, Account Address)
+* Understanding Ethereum Transactions
+* Writing Smart Contracts in Solidity
+
 * Presentation slides, demos and useful resources from NYC meetup on Blockchain for Developers:  https://www.meetup.com/msftcloud/events/241534380 
 
-[Code](https://github.com/razi-rais/blockchain/blob/master/nyc-blockchain-event) | [Slides (PDF)](https://github.com/razi-rais/blockchain/blob/master/nyc-blockchain-event/blockchain-101-slides.pdf) | [SlideShare](Blockchain 101 - Introduction for Developers](https://www.slideshare.net/RaziRais/blockchain-101-introduction-for-developers-78462803) 
+[Code](https://github.com/razi-rais/blockchain/blob/master/nyc-blockchain-event) | [Slides (PDF)](https://github.com/razi-rais/blockchain/blob/master/nyc-blockchain-event/blockchain-101-slides.pdf) | [SlideShare](https://www.slideshare.net/RaziRais/blockchain-101-introduction-for-developers-78462803) 
 
 [<img src="https://github.com/razi-rais/blockchain/blob/master/nyc-blockchain-event/preview.png">](https://www.slideshare.net/RaziRais/blockchain-101-introduction-for-developers-78462803)
 
