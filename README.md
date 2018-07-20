@@ -22,8 +22,6 @@ Hands-on workshop covers:
 * Understanding Ethereum Transactions
 * Writing Smart Contracts in Solidity
 
-* Presentation slides, demos and useful resources from NYC meetup on Blockchain for Developers:  https://www.meetup.com/msftcloud/events/241534380 
-
 [Code](https://github.com/razi-rais/blockchain/blob/master/nyc-blockchain-event) | [Slides (PDF)](https://github.com/razi-rais/blockchain/blob/master/nyc-blockchain-event/blockchain-101-slides.pdf) | [SlideShare](https://www.slideshare.net/RaziRais/blockchain-101-introduction-for-developers-78462803) 
 
 [<img src="https://github.com/razi-rais/blockchain/blob/master/nyc-blockchain-event/preview.png">](https://www.slideshare.net/RaziRais/blockchain-101-introduction-for-developers-78462803)
